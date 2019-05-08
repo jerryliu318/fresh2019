@@ -276,7 +276,6 @@
         <script src="js/sstandc/css3-animate-it.js"></script>
         <script>
             $(function () {
-
                 var _width = $(window).width();
                 if(_width >= 320){
                     $(window).scroll(function(){
@@ -287,7 +286,6 @@
                         }
                     });
                 }
-
                 $('a[href*=#]:not([href=#])').click(function() {
                     var target = $(this.hash);
                     $('html,body').animate({
@@ -295,8 +293,6 @@
                     }, 800);
                     return false;
                 });
-
-
                 $(".toggle a").on("click", function(){
                     $(".menu-m").addClass("show");
                     return false;
