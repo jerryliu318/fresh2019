@@ -27,15 +27,32 @@
 		<link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
 		<link rel="stylesheet" href="plugin/aos/aos.css">
 		<link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="plugin/modal-video/modal-video.min.css">
 		<link rel="stylesheet" href="css/page.css">
 		<script src="plugin/jquery/1.9.1.min.js"></script>
 		<script src="plugin/jqueryui/1.10.3.min.js"></script>
 		<script src="plugin/aos/aos.js"></script>
 		<script src="plugin/slick/slick.min.js"></script>
+		<script src="plugin/modal-video/jquery-modal-video.min.js"></script>
 		<script src="js/global.js"></script>
 		<script src="js/page.js"></script>
 		<script src="js/submit.js"></script>
 		<script src="js/message.js"></script>
+		<script>
+			$(function() {
+				//youtube影片彈窗
+				$(".js-video-button").modalVideo({
+					youtube:{
+						controls:1,
+						nocookie: true,
+						autoplay:1,
+						loop: 1,
+						mute: 1,
+						playlist: 'iqJJ1fyXNV8'
+					}
+				});
+			})
+		</script>
 	</head>
 	<body>
 		<header>
@@ -112,10 +129,15 @@
 					<div class="frame"></div>
 					<div class="title">
 						<span class="text1">Quanta 30+,Make AI New Future</span>
-						<span class="text2">廣達邀請擁有跨界創新思維人才加入儲備幹部行列！舞台準備好了，一同往創新路上大步邁進！</span>
+						<span class="text2">廣達邀請擁有跨界創新思維人才加入廣達人的行列！舞台準備好了，一同往創新路上大步邁進！</span>
 					</div>
-					<div class="img-box">
+					<!-- <div class="img-box">
 						<img src="img/page/page/company-img/302/s1-001.png">
+					</div> -->
+					<div class="img-box">
+						<!-- <img src="img/page/page/company-img/001/s1-001.png"> -->
+						<div class="js-video-button" data-video-id="iqJJ1fyXNV8"></div>
+						<iframe src="https://www.youtube.com/embed/iqJJ1fyXNV8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&enablejsapi=1&playlist=iqJJ1fyXNV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 					</div>
 				</div>
 			</div>
@@ -196,64 +218,64 @@
 									<td colspan="4"><i></i>經營</td>
 								</tr> -->
 								<tr>
-									<td>(SW-EA)AI軟硬體整合產品研發儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，科系不限；具資訊或專案管理相關背景佳</td>
+									<td>人工智慧應用</td>
+									<td class="for-desktop">工程學科類；資訊工程相關；資訊管理相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48833" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51863" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(SW-EA)創新軟體設計儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，電機、通訊、電子、資工、機械等相關科系</td>
+									<td>BMC軟體開發</td>
+									<td class="for-desktop">工程學科類；資訊工程相關；資訊管理相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48835" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51865" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(SW-EA)車用伺服器軟體研發儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，數學系或自動控制系類別佳，電機系、動機系、物理系亦可</td>
+									<td>BIOS韌體研發</td>
+									<td class="for-desktop">工程學科類；資訊工程相關；資訊管理相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48837" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51867" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(BD-MA)新事業分析發展儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，具理工或商管背景者佳</td>
+									<td>嵌入式軟體開發</td>
+									<td class="for-desktop">工程學科類；資訊工程相關；資訊管理相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48839" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51869" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(BD-MA)健康醫療產品行銷企劃儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，科系不限</td>
+									<td>自動化工程</td>
+									<td class="for-desktop">電機電子工程相關；資訊工程相關：其他工程相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48841" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51871" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(PM-MA)車用伺服器專案管理儲備幹部(硬體/軟體/機構)</td>
-									<td class="for-desktop">國內外研究所或博士畢業，理工科系相關背景</td>
+									<td>硬體研發</td>
+									<td class="for-desktop">電機電子工程相關；光電工程相關；其他工程相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48843" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51873" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(PM-MA)光機產品專案管理儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，科系不限</td>
+									<td>機構設計</td>
+									<td class="for-desktop">機械工程相關；航太工程相關；河海或船舶工程相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48845" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51875" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(PM-MA)筆電與消費性產品專案管理儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，工業工程、機械科系、電子電機相關科系</td>
+									<td>熱流設計</td>
+									<td class="for-desktop">機械工程相關；航太工程相關；河海或船舶工程相關</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48847" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51877" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>(Sales-MA)新客戶開發與產品規劃儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所，理工科系、行銷或企業管理相關科系畢業</td>
+									<td>專案管理</td>
+									<td class="for-desktop">工程學科類；商業及管理學科類；數學及電算機科學學科類</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48849" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51879" target="_blank">我要應徵</a></span></td>
 								</tr>
-								<tr class="last-child">
-									<td>(Sales-MA)AI業務儲備幹部</td>
-									<td class="for-desktop">國內外大學或研究所畢業，科系不限</td>
+								<tr>
+									<td>業務管理</td>
+									<td class="for-desktop">商業及管理學科類；經濟社會及心理學科類；語文及人文學科類</td>
 									<td class="for-desktop">桃園</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_48851" target="_blank">我要應徵</a></span></td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_51881" target="_blank">我要應徵</a></span></td>
 								</tr>
 							</tbody>
 						</table>
@@ -615,38 +637,38 @@
 				<div class="qa-box">
 					<span class="qa qa1">
 						<span class="flex-box">
-							<span class="question">Q : 沒有工作經驗也可以應徵廣達儲備幹部的工作嗎？</span>
-							<span class="answer">A : 是的，儲備幹部職缺主要找的就是工作經驗兩年以下或是剛畢業的社會新鮮人，歡迎願意挑戰自我的年輕潛力人才加入我們！</span>
+							<span class="question">Q : 請問面試時我需要攜帶哪些資料？</span>
+							<span class="answer">A : 請攜帶一份個人履歷(含自傳)及其他有利參考文件，如成績單、論文、作品集等，面談室都有提供投影設備，若有需要，也歡迎自備筆電前來應試。</span>
 						</span>
 					</span>
 					<span class="qa qa2">
 						<span class="flex-box">
-							<span class="question">Q : 哪些特質是廣達儲備幹部所看重的?</span>
-							<span class="answer">A : 高自我要求,人際溝通及互動力,自我覺察力,成果導向,說故事力,跨界力。</span>
+							<span class="question">Q : 廣達用人是否有學歷、學校的限制， 不在標準內是否很難進廣達？</span>
+							<span class="answer">A : 廣達唯才是用，甄選標準除了工作經歷、教育程度、專業技能等，只要是具備專業與誠信、充滿工作熱忱的人，都是我們珍惜的人才。</span>
 						</span>
 					</span>
 					<span class="qa qa3">
 						<span class="flex-box">
-							<span class="question">Q : 加入廣達儲備幹部後，是否有培訓計畫或受訓機會？</span>
-							<span class="answer">A : 我們透過精選、淬煉、成長的流程，透過密集的專業訓練與發展活動，以及導師(Mentor)、教練(Coach)的指導，讓每位儲備幹部都能迅速展現工作成果，成為專業人才。</span>
+							<span class="question">Q : 面談結果須等待多久？  會有二次面談的安排嗎？</span>
+							<span class="answer">A : 面談後兩週內將以電話或Email通知；至於二次面談的機會端視用人單位主管的需求作安排。若您在面談後兩週無收到上述任何通知，也歡迎您隨時與人才招募部承辦人洽詢。</span>
 						</span>
 					</span>
 					<span class="qa qa4">
 						<span class="flex-box">
-							<span class="question">Q : 請問此份工作的應徵流程為何？</span>
-							<span class="answer">A : 請至廣達人才招募網投遞履歷，附件包含您的中英文履歷、自傳、兩年內英文成績證明，我們將於4/9前審核並安排第一階段面談。</span>
+							<span class="question">Q : 請問面試當天流程為何？</span>
+							<span class="answer">A : 面試當天，一般程序是先進行約一小時的英文測驗。另根據部門需求，或許還有筆試，以測驗專業方面的能力。或許會有一位以上的主管與您面談，所以請至少預留半天的時間。</span>
 						</span>
 					</span>
 					<span class="qa qa5">
 						<span class="flex-box">
-							<span class="question">Q : 這份工作最大的挑戰會來自於何處？</span>
-							<span class="answer">A : 儲備幹部需面對不同的任務與來自各國不同的客戶和高階長官們直接的指導，因此在專業能力提升與心態建立等自我調適上需更加快速以達到最好狀態。</span>
+							<span class="question">Q : 請問若該職缺並不適合我或此次面談未錄取， 日後還會有其它的工作機會找我嗎？</span>
+							<span class="answer">A : 對於未被錄取的應徵者，我們會以E-mail的方式回謝，履歷資料我們將會妥善保存列入我們的人才庫，留做下回適當職缺的參考，若日後有合適職務，將主動與您聯繫。</span>
 						</span>
 					</span>
 					<span class="qa qa6">
 						<span class="flex-box">
-							<span class="question">Q : 請問有什麼工作升遷的機會或管道?</span>
-							<span class="answer">A : 儲備幹部會透過專業訓練課程與高階長管的定期評核來檢視工作成果，通過評核後將能有更快的升遷機會。</span>
+							<span class="question">Q : 加入廣達，是不是一定要到大陸工作或出差？</span>
+							<span class="answer">A : 廣達為全球化經營發展，在大陸、美國、德國皆有據點，目前若職位需要派駐或出差海外，除了於應徵條件說明外，主管亦將於面談時確認您的意願。</span>
 						</span>
 					</span>
 				</div>
@@ -971,6 +993,9 @@
 							<div class="com-box">
 								<span class="com"><a href="page307.html"><span><span><img src="img/page/page/company-img/307/logo-001.png"></span><span class="text">打造萬物互聯新時代</span></span></a></span>
 								<span class="com"><a href="page308.html"><span><span><img src="img/page/page/company-img/308/logo-001.png"></span><span class="text">挹注5G產業新希望</span></span></a></span>
+								<span class="com"><a href="page309.html"><span><span><img src="img/page/page/company-img/309/logo-001.png"></span><span class="text">5分鐘．想樂最輕鬆</span></span></a></span>
+								<span class="com"><a href="page310.html"><span><span><img src="img/page/page/company-img/310/logo-001.png"></span><span class="text">加入振作 創造精彩</span></span></a></span>
+								<span class="com"><a href="page311.html"><span><span><img src="img/page/page/company-img/311/logo-001.png"></span><span class="text">亞洲商用車龍頭</span></span></a></span>
 							</div>
 						</div>
 						<div class="page-slide-box">
@@ -1003,6 +1028,14 @@
 							<div class="title"></div>
 							<div class="com-box">
 								<span class="com"><a href="page308.html"><span><span><img src="img/page/page/company-img/308/logo-001.png"></span><span class="text">挹注5G產業新希望</span></span></a></span>
+								<span class="com"><a href="page309.html"><span><span><img src="img/page/page/company-img/309/logo-001.png"></span><span class="text">5分鐘．想樂最輕鬆</span></span></a></span>
+							</div>
+						</div>
+						<div class="page-slide-box mobile company-logo">
+							<div class="title"></div>
+							<div class="com-box">
+								<span class="com"><a href="page310.html"><span><span><img src="img/page/page/company-img/310/logo-001.png"></span><span class="text">加入振作 創造精彩</span></span></a></span>
+								<span class="com"><a href="page311.html"><span><span><img src="img/page/page/company-img/311/logo-001.png"></span><span class="text">亞洲商用車龍頭</span></span></a></span>
 							</div>
 						</div>
 						<div class="page-slide-box">

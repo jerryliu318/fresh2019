@@ -899,6 +899,7 @@ section {
   }
 }
 .section2 .title {
+  transform: scale(0.75);
   width: 1025px;
   height: 547px;
   margin: 0 auto;
@@ -925,6 +926,7 @@ section {
 }
 @media all and (max-width: 800px) {
   .section2 .title {
+    transform: scale(1);
     width: 90%;
     height: auto;
     margin-top: -33%;
@@ -1535,4 +1537,7 @@ section {
   .section3 .box .article-list-box .article-list li:nth-child(2n-1) {
     border-right: none;
   }
+}
+.section3 .box1 .article-list-box .article-list li .bottom-box .text {
+  margin-bottom: 0;
 }
