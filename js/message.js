@@ -1,58 +1,75 @@
 $(function() {
+    var datas = [];
+
+    function getMessageList(customId, eventId, lastSortKey) {
+        var url = '/api/getMessageList?customId='+customId+'&event='+eventId;
+        if(lastSortKey) {
+            url += '&lastSortKey='+lastSortKey;
+        }
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(resp) {
+                var items = resp.items;
+                var createTime = resp.lastSortKey;
+                
+                datas = datas.concat(items);
+
+                if(createTime) {
+                    getMessageList(customId, eventId, createTime)
+                    return;
+                }
+
+                var pcMsg = $("#pcMsg");
+                var mMsg = $("#mMsg");
+                var pcFragment = $(document.createDocumentFragment());
+                var mFragment = $(document.createDocumentFragment());
+
+                var i = 0;
+                var pcMsgBoardDiv = null;
+                var mMsgBoardDiv = null;
+
+                for (i = 0; i < datas.length; i++) { 
+                    var content = datas[i];
+
+                    // create pc message-board
+                    if(i % 10 === 0) {
+                        pcMsgBoardDiv = $("<div>").attr('class', 'message-board');
+                    }
+                    
+                    pcMsgBoardDiv.append(createMessage(content));
+
+                    // insert pc message-board to fragment
+                    if(i % 10 === 0) {
+                        pcFragment.append(pcMsgBoardDiv);
+                    }
+
+                    // create mobile message-board
+                    if(i % 3 === 0) {
+                        mMsgBoardDiv = $("<div>").attr('class', 'message-board');
+                    }
+
+                    mMsgBoardDiv.append(createMessage(content));
+
+                    // create mobile message-board to fragment
+                    if(i % 3 === 0) {
+                        mFragment.append(mMsgBoardDiv);
+                    }
+                }
+
+                pcMsg.append(pcFragment);
+                mMsg.append(mFragment);
+            },
+            error: function(xhr) {
+                alert('Ajax request 發生錯誤');
+            }
+        });
+    }
+
     var customId = $("#customId").val(); // customId
     var eventId = $("#eventId").val(); // eventId
-    var url = '/api/getMessageList?customId='+customId+'&event='+eventId;
-    $.ajax({
-        url: url,
-        type: 'GET',
-        success: function(resp) {
-            // var j = 0
-            // for (j = 0; j < 6; j++) { 
-            //     resp.push(resp[0])
-            // }
-
-            var pcMsg = $("#pcMsg");
-            var mMsg = $("#mMsg");
-            var pcFragment = $(document.createDocumentFragment());
-            var mFragment = $(document.createDocumentFragment());
-            var i = 0;
-            var pcMsgBoardDiv = null;
-            var mMsgBoardDiv = null;
-            for (i = 0; i < resp.length; i++) { 
-                var content = resp[i];
-
-                // create pc message-board
-                if(i % 10 === 0) {
-                    pcMsgBoardDiv = $("<div>").attr('class', 'message-board');
-                }
-                
-                pcMsgBoardDiv.append(createMessage(content));
-
-                // insert pc message-board to fragment
-                if(i % 10 === 0) {
-                    pcFragment.append(pcMsgBoardDiv);
-                }
-
-                // create mobile message-board
-                if(i % 3 === 0) {
-                    mMsgBoardDiv = $("<div>").attr('class', 'message-board');
-                }
-
-                mMsgBoardDiv.append(createMessage(content));
-
-                // create mobile message-board to fragment
-                if(i % 3 === 0) {
-                    mFragment.append(mMsgBoardDiv);
-                }
-            }
-
-            pcMsg.append(pcFragment);
-            mMsg.append(mFragment);
-        },
-        error: function(xhr) {
-            alert('Ajax request 發生錯誤');
-        }
-    });
+    
+    getMessageList(customId, eventId, '');
 })
 
 // create msg content
