@@ -2840,7 +2840,7 @@ section {
 .section2 .category-mobile-box .category ul li:nth-child(2n) {
   margin-right: 0;
 }
-.section2 .category-mobile-box .category-3 {
+.section2 .category-mobile-box .category-1 {
   margin-bottom: 0;
   border-bottom: solid 10px #dd8c40;
 }
@@ -2859,6 +2859,9 @@ section {
   margin-bottom: 30px;
   background-size: contain;
   background-image: url("../img/page/index/section2-category-mobile2.png");
+}
+.section2 .category-mobile-box .category-3 {
+  margin-bottom: 0;
 }
 .section2 .category-mobile-box .category-3 .title-box {
   width: 300px;
